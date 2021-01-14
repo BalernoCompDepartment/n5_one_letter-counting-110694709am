@@ -1,11 +1,14 @@
 class Main {
   public static void main(String[] args) {
     
-    // ask user for the words and store as message
-
-    // store the number of the letters as numberLetters
+   String name = "";
+   String output = "";
+   name = Keyboard.getText("please enter your name"); 
+    int length = name.length();
     
-    // display "There are " + numberLetters + " in " + message
+   output = output + "your name has " + length + " in it"; 
+   
+   Screen.display(output, "name");
 
   }
 }
